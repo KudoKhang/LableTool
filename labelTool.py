@@ -35,13 +35,12 @@ input_path = [input_f + name for name in os.listdir(input_f)]
 
 if __name__ == '__main__':
     points = []
-    color = (255, 255, 255)
+    color = (0, 0, 0)
     i = 0
     r = 15
     k = 0
     mode = brushTool
     readImage(i)
-    dummy = mask.copy()
     cv2.namedWindow("Label Tool")
     cv2.setMouseCallback("Label Tool", mode)
     
@@ -80,7 +79,7 @@ if __name__ == '__main__':
                 print('Color: White')
 
         if k == ord('r'):
-            mask = dummy.copy()
+            readImage(i)
             print('Reset mask')
 
         if k == ord('d'):
