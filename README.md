@@ -9,3 +9,4 @@
     print('Previous: press [a] to previous image')
     print('Quit: press [q] to quit')
     print('-----------------------------------------------------')
+ksks
